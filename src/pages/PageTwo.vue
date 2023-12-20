@@ -20,7 +20,7 @@ const options2 = ref([]);
 const idKota = localStorage.getItem('kota_id') ?? '';
 
 const getCity = (id: string) => {
-  console.log('id', id);
+  // console.log('id', id);
   localStorage.setItem('kota_id', id);
   api
     .get(`/api/regencies/${id}.json`)
